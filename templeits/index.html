@@ -1,0 +1,9 @@
+{% for news in news_all %}
+    <h1>
+        {{news.title}}
+    </h1>
+    <img src="{{news.image.url}}" alt="">
+    <p>
+        {{news.description}}
+    </p>    
+    {% endfor %}
